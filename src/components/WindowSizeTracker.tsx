@@ -20,9 +20,9 @@ export default function WindowSizeTracker() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 font-mono">
       <h1 className="text-2xl font-bold mb-4">Window Size Tracker</h1>
-      <div className="bg-white shadow-md rounded-lg p-6 text-center border">
+      <div className="bg-white  rounded-lg p-6 text-center border  shadow-[8px_8px_0px_rgba(0,0,0,1)]">
         <p className="text-lg">
           <span className="font-semibold">Width:</span> {windowSize.width}px
         </p>

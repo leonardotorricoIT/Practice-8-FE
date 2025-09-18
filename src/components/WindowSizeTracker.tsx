@@ -7,15 +7,15 @@ export default function WindowSizeTracker() {
   });
 
   useEffect(() => {
-    const handleResize = () => {
+    const changeResize = () => {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", changeResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", changeResize);
     };
   }, []);
 

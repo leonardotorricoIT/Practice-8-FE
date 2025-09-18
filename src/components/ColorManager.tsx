@@ -13,7 +13,7 @@ export default function ColorManager() {
       setColors([...colors, inputValue]);
       setInputValue("");
     } else {
-      alert("Por favor ingresa un código hex válido (ej: #ff0000)");
+      alert("Enter a valid Hex color code");
     }
   };
 
